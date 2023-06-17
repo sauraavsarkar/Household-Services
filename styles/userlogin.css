@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Jost', sans-serif;
+	outline: none;
+	color: #5c4b51;
+}
+
+body{
+	background: 0px;
+}
+
+.wrapper{
+	position: fixed;
+    width: 450px;
+    right: 20px;
+    margin: 150px 520px;
+    max-width: 800px;
+    padding: 16px;
+    background-color: white;
+}
+
+.form{
+	width: 425px;
+	height: auto;
+	padding: 35px 50px;
+	border-radius: 2px;
+}
+
+.form .title{
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.form .input_wrap{
+	margin-bottom: 20px;
+	width: 325px;
+	position: relative;
+}
+
+.form .input_wrap:last-child{
+	margin-bottom: 0;
+}
+
+.form .input_wrap label{
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form .input_wrap input{
+	padding: 15px;
+	width: 100%;
+	border: 1px solid transparent;
+	font-size: 16px;
+	border-radius: 3px;
+}
+
+.form .input_wrap .input{
+	background: #f5f4f4;
+	padding-right: 35px;
+}
+
+
+.form .input_wrap .input:focus{
+	border-color: #1dbf73;
+}
+
+.form .input_wrap .input_field{
+	position: relative;
+}
+
+.form .input_wrap .btn{
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #fff;
+}
+
+.form .input_wrap .btn.disabled{
+	background: #727272;
+}
+
+.form .input_wrap .btn.enabled{
+	background: #1dbf73;
+	cursor: pointer;
+}
+
+.form .input_wrap .btn.rg{
+	background: #f74040;
+	cursor: pointer;
+}
+
+.form .input_wrap .error_msg{
+	font-size: 15px;
+	margin-bottom: 5px;	
+	color: #f74040;
+	display: none;
+}
+
+.btn2 {
+
+    background-color: #d00e2d;
+
+    border: none;
+
+    color: white;
+
+    padding: 16px 20px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    margin: 4px 2px;
+
+    cursor: pointer;
+
+    width: 100%;
+
+    font-size: 15px;
+
+}

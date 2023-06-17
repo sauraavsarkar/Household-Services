@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sharpeners - Log in or Sign up</title>
+	<link rel="stylesheet" href="../styles/StyleSheet1.css">
+</head>
+<body>
+	<div class="container">
+		<form method="post" action="LogInCheck .php" enctype="">
+                
+                    <h1> LOGIN </h1>
+                    
+                    <table>
+                        <tr>
+                        <tr></tr>
+                        <td><input type="email" id = "email" name="Email" placeholder="Enter Email Here" value="" required></td>
+                        </tr>
+                        <tr>   
+                        <tr></tr>
+                        <td><input type="password" id = "password" name="Password" placeholder="Enter Password Here" value="" required></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br>
+                                <button class="btn" id="submit" type="submit" name="submit" value="Submit" onclick = "CheckLogin()"/>Login</button>
+                                <br></br>
+                                <p class="">
+                                    Don't have an account?
+                                    <br>
+                                    <a href="UserType.html">Sign Up</a>
+                                    <br></br>
+                                    <a href="forgotpass.html"> Forgot Password </a>
+
+                                </p>
+                            </td>
+                        </tr>
+                        
+       
+                    </table>
+                
+            </form>
+	</div>
+		
+		<script>
+		function CheckLogin(){
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            
+			if(email == "" && password == "")
+			{
+				document.getElementsByTagName('h1')[0].innerHTML = "Email and Password must be filled";
+			}
+			if(email == "" && password != "")
+			{
+				document.getElementsByTagName('h1')[0].innerHTML = "Email must be filled";
+			}
+			if(email != "" && password == "")
+			{
+				document.getElementsByTagName('h1')[0].innerHTML = "Password must be filled";
+			}
+        }
+		</script>
+</body>
+</html>

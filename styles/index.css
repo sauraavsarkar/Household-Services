@@ -1,0 +1,25 @@
+body {
+    margin:0;
+  }
+  #container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }    
+  .shadows {
+      position: relative;
+      text-transform: uppercase;
+      text-shadow: -15px 5px 20px #262626;
+      color: #FFFDFA;
+      letter-spacing: -0.05em;
+      font-family: 'Anton', Arial, sans-serif;
+      user-select: none;
+      text-transform: uppercase;
+      font-size: 150px;
+      transition: all 0.25s ease-out;
+  }
+  .shadows:hover {
+      text-shadow: -16px 6px 15px #ced0d3;
+  }
